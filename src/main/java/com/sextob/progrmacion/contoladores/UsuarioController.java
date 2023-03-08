@@ -31,7 +31,7 @@ public class UsuarioController {
     @Autowired
     private IUsuarioService userSvc;
     
-    @PostMapping
+    @PostMapping("/register")
     private ResponseEntity<Usuario> endPointCreateUser(@RequestBody Usuario usuario){
         
         return ResponseEntity.status(HttpStatus.CREATED).body(this.userSvc.createUser(usuario));
