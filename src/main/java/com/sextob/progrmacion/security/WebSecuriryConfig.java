@@ -41,7 +41,9 @@ public class WebSecuriryConfig {
         
         
         return http
-                .csrf().disable()
+                .cors()
+                .and()
+                .csrf().disable()               
                 .authorizeHttpRequests()
                 .requestMatchers(HttpMethod.POST,"/api/users/register")
                 .permitAll()

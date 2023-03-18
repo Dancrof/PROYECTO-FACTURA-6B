@@ -7,12 +7,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication()
-public class CardenasApplication implements CommandLineRunner{
+public class CardenasApplication implements CommandLineRunner {
 
     @Autowired
     private IUsuarioService u;
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         SpringApplication.run(CardenasApplication.class, args);
     }
 
